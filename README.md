@@ -6,7 +6,7 @@ Six NTUA Electrical and Computer Engineering laboratory studies by **Michail Ath
 
 The [lab index](labs/README.md) connects each model to its implementation, report, and recorded outputs. In Lab 3, the simulator tracks rejected arrivals, sojourn times, and state occupancy as the run length and warm-up cutoff change. Lab 5 compares simulated queue statistics with Little’s law and derives traffic and delay metrics for a five-node Jackson network. Its maintained simulation supports explicit seeds, with a regression test for RNG behavior.
 
-Lab 6 implements five regression models and five seasonal-difference filters for hourly GPU requests, producing prediction intervals and recording MAE, RMSE, coverage, and median CRPS. The [archived comparison](labs/6th/programs/output/lab6_model_comparison_results.csv) reports median CRPS of **209.13** for the selected regression and **296.04** for the selected filter. The same 47 observations were used for model selection and scoring. See [forecasting limitations](#forecasting-limitations) before interpreting the results.
+Lab 6 implements five regression models and five seasonal-difference filters for hourly GPU requests, producing prediction intervals and recording MAE, RMSE, coverage, and median CRPS. The [archived comparison](labs/6th/programs/output/lab6_model_comparison_results.csv) reports median CRPS of **209.13** for the selected regression and **296.04** for the selected filter. The [evaluation scope](#forecasting-limitations) explains how these exploratory scores were obtained.
 
 | Lab | Study | Reproduction notes |
 |---|---|---|
@@ -19,7 +19,7 @@ Lab 6 implements five regression models and five seasonal-difference filters for
 
 ## Reproduction
 
-Work from the project root. To obtain a checkout from GitHub, use the following commands.
+Clone the repository and enter the project directory.
 
 ```bash
 git clone https://github.com/ntua-el21026/ntua-queueing-systems-public.git
